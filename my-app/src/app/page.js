@@ -8,7 +8,7 @@ export default function Home() {
         <source src="/background.mp4" type="video/mp4" />
       </video>
 
-      
+      s
       <h1 className={styles.title}>HILLPOINTE OS</h1>
 
       
@@ -22,3 +22,4 @@ export default function Home() {
     </div>
   );
 }
+ 
