@@ -1,4 +1,3 @@
-
 .container {
     position: relative;
     width: 100vw;
@@ -17,7 +16,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    
+
 }
 
 
@@ -29,12 +28,12 @@
     font-weight: extrabold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, monospace;
     color: white;
-    
+
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-.signIN{
+.signIN {
     font-size: larger;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .loginBox button {
-    width:40%;
+    width: 40%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -69,4 +68,3 @@
 .loginBox button:hover {
     background: lightblue;
 }
-
