@@ -1,12 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { AppBar, Box, CssBaseline, Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
 import { Home, Assessment, Settings } from "@mui/icons-material";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const drawerWidth = 240;
 
 export default function AdminLayout() {
-  const [page, setPage] = useState("dashboard"); 
+  const router = useRouter();
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -14,7 +17,7 @@ export default function AdminLayout() {
       <AppBar position="fixed" sx={{ zIndex: 1201 }}>
         <Toolbar>
           <Typography variant="h6" noWrap>
-           Hillpointe OS
+            Hillpointe OS
           </Typography>
         </Toolbar>
       </AppBar>
@@ -32,21 +35,28 @@ export default function AdminLayout() {
       >
         <Toolbar />
         <List>
-          <ListItem button onClick={() => setPage("dashboard")}>
-            <ListItemIcon><Home /></ListItemIcon>
-            <ListItemText primary="Revenue Dashboard" />
-          </ListItem>
-          <ListItem button onClick={() => setPage("reports")}>
-            <ListItemIcon><Assessment /></ListItemIcon>
-            <ListItemText primary="Financial Reports" />
-          </ListItem>
-          <ListItem button onClick={() => setPage("settings")}>
-            <ListItemIcon><Settings /></ListItemIcon>
-            <ListItemText primary="Settings" />
-          </ListItem>
+          <Link href="/dashboard" passHref legacyBehavior>
+            <ListItem button>
+              <ListItemIcon><Home /></ListItemIcon>
+              <ListItemText primary="Revenue Dashboard" />
+            </ListItem>
+          </Link>
+
+          <Link href="/reports" passHref legacyBehavior>
+            <ListItem button>
+              <ListItemIcon><Assessment /></ListItemIcon>
+              <ListItemText primary="Financial Reports" />
+            </ListItem>
+          </Link>
+
+          <Link href="/settings" passHref legacyBehavior>
+            <ListItem button>
+              <ListItemIcon><Settings /></ListItemIcon>
+              <ListItemText primary="Settings" />
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
-
 
       <Box
         component="main"
@@ -57,26 +67,9 @@ export default function AdminLayout() {
           marginLeft: `${drawerWidth}px`,
         }}
       >
-        {page === "dashboard" && (
-          <Typography variant="h4" gutterBottom>
-            Revenue Dashboard
-          </Typography>
-
-        )}
-
-        {page === "reports" && (
-          <Typography variant="h4" gutterBottom>
-            Financial Reports
-          </Typography>
-
-        )}
-
-        {page === "settings" && (
-          <Typography variant="h4" gutterBottom>
-            Settings
-          </Typography>
-
-        )}
+        <Typography variant="h4" gutterBottom>
+          Admin Dashboard
+        </Typography>
       </Box>
     </Box>
   );

@@ -6,10 +6,7 @@ import DashboardLayout from '../components/AdminLayout';
 import ApartmentList from "../components/RevenueDashboard";  
 
 export default function Dashboard() {
-  const [category, setCategory] = useState("all"); 
-
-  
-
+   const [category, setCategory] = useState("all"); 
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -22,5 +19,4 @@ export default function Dashboard() {
         </Container>
       </Box>
     </Box>
-  );
-}
+  )}
