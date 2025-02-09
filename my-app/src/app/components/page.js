@@ -13,7 +13,7 @@ export default function DashboardPage() {
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: "240px" }}>
         <Toolbar />
         <Container>
-          {page === "dashboard" && <RevenueDashboard />}
+          {page === "dashboard" && <RevenueDashboard/>}
           {page === "reports" && <Typography variant="h4">Reports Page Coming Soon</Typography>}
           {page === "settings" && <Typography variant="h4">Settings Page Coming Soon</Typography>}
         </Container>

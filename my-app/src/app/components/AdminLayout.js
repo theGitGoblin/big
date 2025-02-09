@@ -57,20 +57,7 @@ export default function AdminLayout() {
           </Link>
         </List>
       </Drawer>
-
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          bgcolor: "#F4F4F4",
-          padding: "20px",
-          marginLeft: `${drawerWidth}px`,
-        }}
-      >
-        <Typography variant="h4" gutterBottom>
-          Admin Dashboard
-        </Typography>
       </Box>
-    </Box>
+
   );
 }

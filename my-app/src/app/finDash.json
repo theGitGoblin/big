@@ -1,0 +1,28 @@
+{
+  "dashboard": "Financial Dashboard",
+  "time_period": "Q1 2025",
+  "total_expenses": 850000,
+  "expense_breakdown": {
+    "Salaries": 300000,
+    "Marketing": 150000,
+    "Operations": 200000,
+    "R&D": 100000,
+    "Miscellaneous": 100000
+  },
+  "net_profit": 400000,
+  "profit_margin": 32.0,
+  "cash_flow": {
+    "inflows": 1300000,
+    "outflows": 850000,
+    "net_cash_flow": 450000
+  },
+  "investments": {
+    "stocks": 150000,
+    "bonds": 100000,
+    "real_estate": 200000
+  },
+  "debt": {
+    "short_term": 50000,
+    "long_term": 200000
+  }
+}

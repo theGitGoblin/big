@@ -1,0 +1,22 @@
+{
+  "dashboard": "Revenue Dashboard",
+  "time_period": "Q1 2025",
+  "total_revenue": 1250000,
+  "monthly_revenue": {
+    "January": 400000,
+    "February": 450000,
+    "March": 400000
+  },
+  "top_products": [
+    {"name": "Product A", "revenue": 500000},
+    {"name": "Product B", "revenue": 300000},
+    {"name": "Product C", "revenue": 200000}
+  ],
+  "regions": {
+    "North America": 700000,
+    "Europe": 300000,
+    "Asia": 250000
+  },
+  "growth_rate": 12.5,
+  "profit_margin": 25.4
+}
