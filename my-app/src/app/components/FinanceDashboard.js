@@ -28,7 +28,6 @@ export default function RevenueDashboard() {
   return (
     <Box sx={{ flexGrow: 1, p: 3, backgroundColor: "#FFFFFF", color: "#1D3A6C" }}>
       <Grid container spacing={2}>
-        {/* Total Revenue Card */}
         <Grid item xs={12} sm={4}>
           <Card sx={{ backgroundColor: "#F4D25A", color: "#1D3A6C" }}>
             <CardContent>
